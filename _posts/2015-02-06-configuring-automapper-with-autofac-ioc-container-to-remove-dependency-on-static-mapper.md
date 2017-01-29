@@ -5,7 +5,13 @@ date: 2013-09-21 -0800
 comments: true
 tags: [first class functions, first class functions in c#, functional programming, functional programming in c#, higher order functions, higher order functions in c#]
 redirect_from:
-  - /index.php/configuring-automapper-with-autofac-ioc-container-to-remove-dependency-on-static-mapper/
+  - index.php/configuring-automapper-with-autofac-ioc-container-to-remove-dependency-on-static-mapper/
+  - index.php/tag/first-class-functions/
+  - index.php/tag/first-class-functions-in-c#/
+  - index.php/tag/functional-programming/
+  - index.php/tag/functional-programming-in-c#/
+  - index.php/tag/higher-order-functions/
+  - index.php/tag/higher-order-functions-in-c#/
 ---
 The concept of first class functions and higher order functions is really important to use the modern programming languages effectively and we should take maximum benefit from the functional programming support in c#. Though its not a truly functional programming language but still you can do lot of functional programming in c#.
 

@@ -6,6 +6,10 @@ comments: true
 tags: [WPF, WPF Auto Complete, WPF AutoCompleteBox]
 redirect_from:
   - index.php/asynchronous-auto-complete-text-box-in-wpf/
+  - index.php/tag/wpf/
+  - index.php/tag/wpf-auto-complete/
+  - index.php/tag/wpf-autocompletebbox/
+
 ---
 * Download and Install WPFToolkit from [WPFToolkit](http://wpf.codeplex.com/releases/view/40535)
 *  Drag and Drop “AutoCompleteBox” from toolbox, if for any reason it is not appearing in the toolbox you can create a tab in toolbox and add choose items System.Windows.Controls.*.Toolkit or you can create the control following steps

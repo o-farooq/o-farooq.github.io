@@ -6,6 +6,13 @@ comments: true
 tags: [Apps are disabled on this site, Error occurred in deployment step 'Install app for SharePoint', sharepoint 2013 app deployment, sharepoint app deployment error, sharepoint app helloworld]
 redirect_from:
   - index.php/sharepoint-2013-error-occurred-in-deployment-step-install-app-for-sharepoint-apps-are-disabled-on-this-site/
+  - index.php/tag/apps-are-disabled-on-this-site/
+  - index.php/tag/error-occured-in-deployment-step-install-app-for-sharepoint/
+  - index.php/tag/sharepoint-2013-app-deployment/
+  - index.php/tag/sharepoint-app-deployment/
+  - index.php/tag/sharepoint-app-helloworld/
+
+  
 ---
 
 I was just deploying my first app in an on premises sharepoint installation and deploying failed with following error in the output

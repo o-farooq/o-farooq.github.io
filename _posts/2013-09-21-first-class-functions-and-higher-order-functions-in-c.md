@@ -6,6 +6,9 @@ comments: true
 tags: [autofac, automapper, automapper with autofac]
 redirect_from:
   - index.php/first-class-functions-and-higher-order-functions-in-c/
+  - /index.php/tag/autofac/
+  - /index.php/tag/automapper/
+  - /index.php/tag/automapper-with-autofac/
 ---
 Automapper currently provides a static class Mapper to do different operations, Mapper is just another wrapper on IMappingEngine, IConfiguration and IConfigurationProvider. So by dependency injecting these interfaces along with few others the Mapper static class can be avoided. This can be done by any of the IOC container, Jimmy has written a nice post on how to do it in StructureMap, the code below shows how to do it in Autofac
 
