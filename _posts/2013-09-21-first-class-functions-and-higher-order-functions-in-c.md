@@ -1,53 +1,20 @@
 ---
 layout: post
 title: "First class functions and higher order functions in c#"
-date: 2015-03-06 -0800
+date: 2013-09-21 -0800
 comments: true
-tags: [autofac, automapper, automapper with autofac]
+tags: [first class functions, first class functions in c#, functional programming, functional programming in c#, higher order functions, higher order functions in c#]
 redirect_from:
   - index.php/first-class-functions-and-higher-order-functions-in-c/
-  - /index.php/tag/autofac/
-  - /index.php/tag/automapper/
-  - /index.php/tag/automapper-with-autofac/
+  - index.php/tag/first-class-functions/
+  - index.php/tag/first-class-functions-in-c#/
+  - index.php/tag/functional-programming/
+  - index.php/tag/functional-programming-in-c#/
+  - index.php/tag/higher-order-functions/
+  - index.php/tag/higher-order-functions-in-c#/
 ---
-Automapper currently provides a static class Mapper to do different operations, Mapper is just another wrapper on IMappingEngine, IConfiguration and IConfigurationProvider. So by dependency injecting these interfaces along with few others the Mapper static class can be avoided. This can be done by any of the IOC container, Jimmy has written a nice post on how to do it in StructureMap, the code below shows how to do it in Autofac
+The concept of first class functions and higher order functions is really important to use the modern programming languages effectively and we should take maximum benefit from the functional programming support in c#. Though its not a truly functional programming language but still you can do lot of functional programming in c#.
 
-```csharp
-public virtual IServiceProvider ConfigureServices(IServiceCollection services)
-{
-  services.AddMvc();
-  services
-    .AddDataProtection(opt => opt.ApplicationDiscriminator = "your-app-id")
-    .ProtectKeysWithYourCustomKey()
-    .PersistKeysToYourCustomLocation();
-}
-```
+**First-Class Functions:** The ability of a programming language in which functions can be assigned to a variable and can be treated just like other variables is called first class functions support. Immediately few questions should come to your mind like Is this something new? Does c++ support first class functions?  The answer is that this is not something new and c++ support first class functions as well in the form of function pointers. C# also support first class functions and one way to do is that through delegates.
 
-Note that ConfigurationStore is registered as singleton as there will be only one configuration object in single app domain. MappingEngine can be registered as singleton also but it does not really matter as it is fairly lightweight class.
-
-The configuration can be unit test using following unit test
-
-```csharp
-var container = GetAutofacContainer();
-const int expectedValue = 15;
-
-var configuration1 = container.Resolve<IConfiguration>();
-var configuration2 = container.Resolve<IConfiguration>();
-Assert.AreSame(configuration1,configuration2);
-
-var configurationProvider = container.Resolve<IConfigurationProvider>();
-Assert.AreSame(configurationProvider,configuration1);
-
-var configuration = container.Resolve<ConfigurationStore>();
-Assert.AreSame(configuration,configuration1);
-
-configuration1.CreateMap<Source, Destination>();
-
-var engine = container.Resolve<IMappingEngine>();
-
-var destination = engine.Map<Source, Destination>(new Source { Value = expectedValue });
-
-Assert.AreEqual(expectedValue,destination.Value);
-```
-
-Thats all we need to remove the dependency on Mapper static class using Autofac
+**Higher Order Functions:** The functions that take function as an argument or return functions as return value are called higher order functions. So the languages that support first class functions generally support higher order functions. c++ and c# both support higher order functions through various mechanisms which I am going to discuss in detail in future posts .
