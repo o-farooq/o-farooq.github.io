@@ -1,0 +1,52 @@
+#
+# Blog Settings
+#
+author: Omer Farooq
+description: "Omer Farooq's blog."
+show_description_in_nav: false
+url: http://www.ofarooq.com
+title: Omer Farooq
+subtitle: ".NET, AWS and random stuff"
+gravatar_url: https://s.gravatar.com/avatar/f1541fd0d08e3411ea235f18d975e1db
+subscribe_rss: http://feedproxy.google.com/Ofarooq
+locale: en_US
+
+# Github repositories
+github_user: o-farooq
+github_repo_url: https://github.com/o-farooq/o-farooq.github.io/
+
+# Twitter
+twitter_user: ofarooq
+twitter_tweet_button: false
+
+# Google +
+google_user: 102244995814077830992
+
+# LinkedIn
+linkedin_user: omfarooq
+
+# Disqus Comments
+disqus_short_name: ofarooq
+disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id: UA-36408759-2
+
+
+#
+# Jekyll Settings
+#
+markdown: kramdown
+permalink: /archive/:year/:month/:day/:title/
+paginate: 5
+paginate_path: "page/:num"
+exclude: [/Gemfile,/Gemfile.lock,rakefile,README.md]
+jekyll-mentions:
+  base_url: https://twitter.com
+
+gems:
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-coffeescript
+  - jekyll-paginate

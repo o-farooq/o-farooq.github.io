@@ -1,0 +1,18 @@
+<ul class="main-navigation">
+  <li><a href="/about/">about</a></li>
+  <li><a href="/archive">archives</a></li>
+  <li><a href="/tags">tags</a></li>
+  <li><a href="{{ site.github_repo_url }}issues/new">contact</a></li>
+</ul>
+
+<div id="searchbox">
+Loading...
+</div>
+
+{% if site.description and site.show_description_in_nav == true %}
+<section class="aboutme">
+  <p>
+    {{ site.description }}
+  </p>
+</section>
+{% endif %}

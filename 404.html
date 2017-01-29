@@ -1,0 +1,99 @@
+---
+layout: page
+title: "404 - File Not Found"
+comments: false
+sharing: false
+footer: true
+---
+
+<script type="text/javascript">
+(function(){
+	function getQueryVariable(variable) {
+		var query = window.location.search.substring(1),
+			vars = query.split("&");
+		for (var i=0;i<vars.length;i++) {
+			var pair = vars[i].split("=");
+			if(pair[0] == variable){
+				return pair[1];
+			}
+		}
+		return(false);
+	}
+
+	function currentLocationIsPMachine() {
+		var path = location.pathname,
+			re = new RegExp("/blog/[^\\.]+\\.php");
+		return re.test(path);
+	}
+
+	var pMachineQueryId = getQueryVariable("id");
+	if(!currentLocationIsPMachine() || !pMachineQueryId) {
+		return;
+	}
+
+	var pMachineIdParts = pMachineQueryId.split("_"),
+		pMachineIdType = pMachineIdParts[0].substring(0, 1),
+		pMachineId = null,
+		redirectUrl = null;
+
+	switch(pMachineIdType) {
+		case "P":
+		case "X":
+			// Permalink / preview
+			pMachineId = pMachineIdParts[0].substring(1);
+			break;
+		case "A":
+		case "M":
+		case "D":
+			// A/M == Monthly archive
+			// D == Blog day
+			// substr($postid, 1, 4), substr($postid, 5, 2)
+			// TODO: Need archive year/month pages.
+			redirectUrl = "/archive";
+			break;
+		case "0":
+		case "1":
+		case "2":
+		case "3":
+		case "4":
+		case "5":
+		case "6":
+		case "7":
+		case "8":
+		case "9":
+			// Individual post
+			pMachineId = pMachineIdParts[0];
+			break;
+		default:
+			// Not a supported mapping.
+			// C == category (not supported)
+			break;
+	}
+
+	if(pMachineId !== null) {
+		// Get the mappings and redirect.
+		$.getJSON('/pmachine_redirects.json', function(data) {
+			var newPath = data[pMachineId];
+			if(newPath) {
+				window.location.replace(newPath);
+			}
+		});
+	}
+	else if(redirectUrl !== null) {
+		// Already calculated the redirect URL - redirect.
+		window.location.replace(redirectUrl);
+	}
+}());
+</script>
+
+<h1>Oh, SNAP! I couldn't find that page.</h1>
+<p>Hi, there! I recently migrated my blog to a new platform and may have broken
+a lot of links inadvertently.</p>
+<p>If you don't mind, please
+<a href="https://github.com/o-farooq/o-farooq.github.io/issues/new">log an issue</a>
+with the URL you were trying to reach and where you found the URL. Thanks!</p>
+<script type="text/javascript">
+	var GOOG_FIXURL_LANG = 'en';
+	var GOOG_FIXURL_SITE = 'http://www.ofarooq.com';
+</script>
+<script type="text/javascript" src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
