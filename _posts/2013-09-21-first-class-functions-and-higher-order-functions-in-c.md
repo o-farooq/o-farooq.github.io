@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Configuring Automapper with Autofac IOC Container to remove dependency on static Mapper"
+title: "First class functions and higher order functions in c#"
 date: 2015-03-06 -0800
 comments: true
 tags: [autofac, automapper, automapper with autofac]

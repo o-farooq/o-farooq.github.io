@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First class functions and higher order functions in c#"
+title: "Configuring Automapper with Autofac IOC Container to remove dependency on static Mapper"
 date: 2013-09-21 -0800
 comments: true
 tags: [first class functions, first class functions in c#, functional programming, functional programming in c#, higher order functions, higher order functions in c#]
