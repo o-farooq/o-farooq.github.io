@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Configuring Automapper with Autofac IOC Container to remove dependency on static Mapper"
-date: 2015-03-06 -0800
+date: 2015-02-06 -0800
 comments: true
 tags: [autofac, automapper, automapper with autofac]
 redirect_from:

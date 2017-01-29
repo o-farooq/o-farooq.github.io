@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SharePoint 2013 Error occurred in deployment step 'Install app for sharepoint' apps are disabled on this site"
-date: 2015-03-06 -0800
+date: 2013-02-18 -0800
 comments: true
 tags: [Apps are disabled on this site, Error occurred in deployment step 'Install app for SharePoint', sharepoint 2013 app deployment, sharepoint app deployment error, sharepoint app helloworld]
 redirect_from:

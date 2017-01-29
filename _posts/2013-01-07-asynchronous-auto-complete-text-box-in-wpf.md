@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Asynchronous Auto Complete Text Box in WPF"
-date: 2013-09-21 -0800
+date: 2013-01-07 -0800
 comments: true
 tags: [WPF, WPF Auto Complete, WPF AutoCompleteBox]
 redirect_from:
