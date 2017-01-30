@@ -10,17 +10,20 @@ redirect_from:
   - index.php/tag/automapper/
   - index.php/tag/automapper-with-autofac/
 ---
-Automapper currently provides a static class Mapper to do different operations, Mapper is just another wrapper on IMappingEngine, IConfiguration and IConfigurationProvider. So by dependency injecting these interfaces along with few others the Mapper static class can be avoided. This can be done by any of the IOC container, Jimmy has written a nice post on how to do it in StructureMap, the code below shows how to do it in Autofac
+Automapper currently provides a static class Mapper to do different operations, Mapper is just another wrapper on IMappingEngine, IConfiguration and IConfigurationProvider. So by dependency injecting these interfaces along with few others the Mapper static class can be avoided. This can be done by any of the IOC container, [Jimmy](https://lostechies.com/jimmybogard/2009/05/12/automapper-and-ioc/) has written a nice post on how to do it in StructureMap, the code below shows how to do it in Autofac
 
 ```csharp
-public virtual IServiceProvider ConfigureServices(IServiceCollection services)
-{
-  services.AddMvc();
-  services
-    .AddDataProtection(opt => opt.ApplicationDiscriminator = "your-app-id")
-    .ProtectKeysWithYourCustomKey()
-    .PersistKeysToYourCustomLocation();
-}
+builder.RegisterType<TypeMapFactory>().As<ITypeMapFactory>();
+builder.RegisterType<ConfigurationStore>()
+       .As<ConfigurationStore>()
+       .WithParameter("mappers", MapperRegistry.Mappers)
+       .SingleInstance();
+ 
+builder.Register((ctx, t) => ctx.Resolve<ConfigurationStore>())
+       .As<IConfiguration>()
+       .As<IConfigurationProvider>();
+ 
+builder.RegisterType<MappingEngine>().As<IMappingEngine>();
 ```
 
 Note that ConfigurationStore is registered as singleton as there will be only one configuration object in single app domain. MappingEngine can be registered as singleton also but it does not really matter as it is fairly lightweight class.
