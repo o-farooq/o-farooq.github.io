@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31831821-7cc0-4f11-bf83-ee6c5cf009cc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/20170206-fork-cgm-remote-monitor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/20170206-git-installation-verification.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/20170206-nightscout-deploy-to-heroku.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/20170206-push-over-app-key.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-02-06-setting-up-nightscout-with-glimp-and-abbott-freestyle-libre-using-github-pushover-and-heroku.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-02-06-configuring-automapper-with-autofac-ioc-container-to-remove-dependency-on-static-mapper.md" afterPath="$PROJECT_DIR$/_posts/2015-02-06-configuring-automapper-with-autofac-ioc-container-to-remove-dependency-on-static-mapper.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/2013-02-18-sharepoint-2013-error-occurred-in-deployment-step-install-app-for-sharepoint-apps-are-disabled-on-this-site.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="46">
+              <first_editor relative-caret-position="99">
                 <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
                 <folding />
               </first_editor>
@@ -47,12 +51,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-02-06-configuring-automapper-with-autofac-ioc-container-to-remove-dependency-on-static-mapper.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2015-02-06-configuring-automapper-with-autofac-ioc-container-to-remove-dependency-on-static-mapper.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-02-06-configuring-automapper-with-autofac-ioc-container-to-remove-dependency-on-static-mapper.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SECOND">
               <first_editor relative-caret-position="462">
-                <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+                <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-02-06-setting-up-nightscout-with-glimp-and-abbott-freestyle-libre-using-github-pushover-and-heroku.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-02-06-setting-up-nightscout-with-glimp-and-abbott-freestyle-libre-using-github-pushover-and-heroku.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="99">
+                <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -156,6 +173,8 @@
         <option value="$PROJECT_DIR$/_posts/2013-02-18-sharepoint-2013-error-occurred-in-deployment-step-install-app-for-sharepoint-apps-are-disabled-on-this-site.md" />
         <option value="$PROJECT_DIR$/_posts/2013-01-07-asynchronous-auto-complete-text-box-in-wpf.md" />
         <option value="$PROJECT_DIR$/_posts/2015-02-06-configuring-automapper-with-autofac-ioc-container-to-remove-dependency-on-static-mapper.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-02-06-setting-up-nightscout-with-libre-using-github-and-heroku.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-02-06-setting-up-nightscout-with-glimp-and-abbott-freestyle-libre-using-github-pushover-and-heroku.md" />
       </list>
     </option>
   </component>
@@ -185,8 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,10 +243,6 @@
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -238,24 +251,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="o-farooq.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="o-farooq.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="o-farooq.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -283,6 +278,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,10 +292,13 @@
     <property name="js-jscs-package" value="C:\Users\Omer\AppData\Roaming\npm\node_modules\jscs" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Github\blog\o-farooq.github.io\_posts" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\o-farooq.github.io\images" />
+      <recent name="D:\Github\o-farooq.github.io\_site\images" />
+      <recent name="D:\Github\o-farooq.github.io\_posts" />
       <recent name="D:\Github\blog\o-farooq.github.io\_posts" />
     </key>
   </component>
@@ -377,12 +377,13 @@
       <workItem from="1485161608792" duration="2022000" />
       <workItem from="1485163750210" duration="10386000" />
       <workItem from="1485656856254" duration="2665000" />
-      <workItem from="1485736305448" duration="791000" />
+      <workItem from="1485736305448" duration="1378000" />
+      <workItem from="1486374142760" duration="2290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23575000" />
+    <option name="totallyTimeSpent" value="26452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="0" width="3004" height="1931" extended-state="0" />
@@ -417,13 +418,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_site/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/opensearch.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -728,7 +722,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/2013-02-18-sharepoint-2013-error-occurred-in-deployment-step-install-app-for-sharepoint-apps-are-disabled-on-this-site.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="46">
+          <first_editor relative-caret-position="99">
             <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
             <folding />
           </first_editor>
@@ -751,7 +745,18 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
           <first_editor relative-caret-position="462">
-            <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-02-06-setting-up-nightscout-with-glimp-and-abbott-freestyle-libre-using-github-pushover-and-heroku.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="99">
+            <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             <folding />
           </first_editor>
           <second_editor />
